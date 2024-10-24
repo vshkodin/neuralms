@@ -10,16 +10,17 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
     background-color: white;
+    width: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 600px;
+    margin-right: auto;
 }
 
 .logo img {
@@ -29,12 +30,21 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    margin-left: 50px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    margin-left: auto; /* Keeps the nav bar on the right */
+    margin-right: 20px; /* Add this to move the nav bar slightly to the left */
 }
 
 nav ul li {
     margin-left: 20px;
     position: relative;
+    padding: 0;
 }
 
 nav ul li a {
@@ -366,7 +376,7 @@ nav ul {
     flex-direction: column;
     align-items: flex-end;
     margin-top: 10px;
-    padding-left: 0;
+    padding-left: 500;
 }
 
 nav ul li {
@@ -399,35 +409,48 @@ nav ul li {
 
 @media (max-width: 480px) {
 header {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .logo img {
-    height: 180px;
-    align-items: center;
+    height: 150px;
 }
 
-.logo-text h1 {
-    font-size: 18px;
+nav {
+    margin-left: 0;
 }
 
 nav ul {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
     padding: 0;
 }
 
 nav ul li {
-    margin-bottom: 10px;
-    margin-left: 0;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .middle-section h1 {
     font-size: 20px;
+    text-align: center;
 }
 
 .services-section h2 {
@@ -436,9 +459,5 @@ nav ul li {
 
 .footer-logo img {
     height: 50px;
-}
-
-.picture-placeholder {
-    height: 150px;
 }
 }
