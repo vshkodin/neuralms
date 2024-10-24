@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural MS Consulting - Home</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="assets/images/logo.png" alt="Neural MS Consulting Logo">
+        <div class="logo-text">
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="picture-placeholder">
+    <img src="assets/images/main_pic.jpeg" alt="Main Image">
+</div>
+
+<div class="middle-section">
+    <h1>Empower Your Business with Cutting-Edge Software Solutions</h1>
+    <p>Unlock the full potential of your business through automation and advanced technology. We specialize in crafting custom software that streamlines your operations, integrates the latest AI tools, and transforms the way you work. Whether you're looking to optimize workflows or embrace innovation, our solutions are tailored to help your business thrive in the digital age.</p>
+    <a href="#" class="btn-consultation" id="consultation-btn">Book a Free Consultation</a>
+</div>
+
+<script>
+    document.getElementById('consultation-btn').addEventListener('click', function(event) {
+        event.preventDefault();
+        const email = "amaslow@neuralms.com";
+        const subject = "Consultation Request";
+        const body = "Hello,\n\nI would like to schedule a consultation regarding your software solutions.";
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+</script>
+
+<div class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service-item">
+            <img src="assets/images/services1.jpg" alt="Custom Software Development">
+            <h3>Custom Software Development</h3>
+        </div>
+        <div class="service-item">
+            <img src="assets/images/services2.jpeg" alt="Business Process Automation">
+            <h3>Business Process Automation</h3>
+        </div>
+        <div class="service-item">
+            <img src="assets/images/services3.jpeg" alt="Artificial Intelligence">
+            <h3>Artificial Intelligence</h3>
+        </div>
+        <div class="service-item">
+            <img src="assets/images/services4.jpeg" alt="Technology Integration">
+            <h3>Technology Integration</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="footer-copyright">
+        &copy; 2024 Neural MS Consulting. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
